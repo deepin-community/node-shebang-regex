@@ -1,0 +1,47 @@
+node-shebang-regex (3.0.0-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints.
+    + node-shebang-regex: Add Multi-Arch: foreign.
+  * Remove empty leading paragraph in Description.
+
+  [ Yadd ]
+  * Modernize debian/watch
+  * Fix GitHub tags regex
+  * Update standards version to 4.6.0, no changes needed.
+
+ -- Yadd <yadd@debian.org>  Mon, 11 Oct 2021 08:43:30 +0200
+
+node-shebang-regex (3.0.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Use dh-sequence-nodejs auto install
+  * New upstream version 3.0.0
+  * Enable upstream test using tape instead of ava
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 20 Oct 2020 17:04:09 +0200
+
+node-shebang-regex (2.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #845327)
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 22 Nov 2016 19:17:08 +0530

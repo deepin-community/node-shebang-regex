@@ -1,0 +1,18 @@
+Description: replace ava by tape
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2020-10-20
+
+--- a/test.js
++++ b/test.js
+@@ -1,7 +1,8 @@
+-import test from 'ava';
+-import shebangRegex from '.';
++const test = require('tape');
++const shebangRegex = require('.');
+ 
+ test('main', t => {
+ 	t.true(shebangRegex.test('#!/usr/bin/env node\nconsole.log("unicorns");'));
+ 	t.is(shebangRegex.exec('#!/usr/bin/env node')[1], '/usr/bin/env node');
++    t.end();
+ });
